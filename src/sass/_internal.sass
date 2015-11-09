@@ -212,6 +212,8 @@
 			margin-bottom: 0 
 .listpost
 	margin-bottom: 57px 
+	+r(730)
+		margin: 0 10px 20px 10px 
 	.h2
 		margin-bottom: 15px 
 	&__meta
@@ -276,3 +278,82 @@
 		img
 			display: block
 			width: 100% 
+.pagi
+	border: 2px solid #E4E4E4 
+	font-size: 0 
+	ul,li,a
+		display: inline-block
+	a
+		height: 47px 
+		line-height: 47px
+		min-width: 44px  
+		text-align: center
+		+latob
+		color: #111111 
+		text-decoration: none
+		font-size: 11px 
+		border-right: 1px solid #EEE 
+		padding: 0 14px 
+		+box
+		&:hover,&.is-active
+			background: #e8e8e8
+.toppost
+	margin-bottom: 55px 
+	position: relative
+	@extend %in
+	.toppost__slide
+		position: relative
+		background-position: 50% 50% 
+	.topppost__contents
+		height: 0
+		width: 100%
+		padding-bottom: 50%  
+	.toppost__content
+		position: absolute
+		left: 26px 
+		bottom: 26px 
+	.toppost__meta
+		font-size: 11px 
+		+latob
+		color: #666666 
+		text-transform: uppercase
+		white-space: nowrap
+	.toppost__cat
+		padding: 3px 4px
+		color: #fff  
+		background: #fb5774 
+		display: inline-block
+		margin-right: 10px 
+	&__aud
+		display: inline-block
+	&__title
+		font-size: 26px 
+		text-transform: uppercase
+		color: #454444 
+		+mon
+		line-height: 30px
+		width: 200px  
+		margin-top: 10px
+	&__arrows
+		right: 40px 
+		bottom: 28px 
+		position: absolute
+		border: 2px solid #FFF 
+		z-index: 30 
+		.toppost__prev,.toppost__next
+			width: 47px 
+			height: 45px 
+			float: left
+			cursor: pointer
+			position: relative
+			cursor: pointer
+			&:before
+				content: ' '
+				position: absolute
+				top: 17px 
+				left: 19px 
+				+s(toppost-next)
+		.toppost__prev
+			border-right: 1px solid #FFF 
+			&:before
+				+s(toppost-prev)

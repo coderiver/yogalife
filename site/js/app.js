@@ -51,6 +51,17 @@ $(document).ready(function() {
 		speed: 900,
 		init: true
 	});
+	$('.js-toppost').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		slide: '.toppost__slide',
+		nextArrow: $('.toppost__next'),
+		prevArrow: $('.toppost__prev'),
+		arrows: true,
+		speed: 900,
+		init: true
+	});
 	$('.js-horo').slick({
 		infinite: true,
 		slidesToShow: 1,
