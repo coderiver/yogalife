@@ -1,9 +1,291 @@
 // Normally mainpage styles
 // body
 // 	+s(coderiver)
-div
-	+r(1024)
+
+.block
+	margin: 40px 0 34px 0
+	+clr
+.h2
+	text-transform: uppercase
+	font-size: 30px 
+	color: #151515 
+	+mon
+	text-align: center
+	margin-bottom: 44px 
+	padding-bottom: 23px 
+	position: relative
+	line-height: 1 
+	&:before
+		position: absolute
+		width: 36px 
+		content: "" 
+		height: 3px 
+		background: #000000 
+		position: absolute
+		left: 50%
+		bottom: 0
+		margin-left: -18px   
+.smallslider
+	position: relative
+	padding-bottom: 36px 
+	&__next,&__prev
+		position: absolute
+		left: 0
+		top: 50%
+		+s(prev)  
+		z-index: 10
+		cursor: pointer 
+	&__next
+		+s(next)
+		right: 0
+		left: auto 
+	.smallslider__slides
+		padding: 0 67px 
+	.slick-list
+		margin: 0 -20px 
+	.nodots .slick-dots
+		display: none !important
+	.slick-dots
+		position: absolute
+		bottom: -36px
+		text-align: center
+		li
+			display: inline-block
+			width: 10px 
+			height: 10px 
+			border: 1px solid #9A9A9A 
+			+box
+			border-radius: 10px
+			margin-right: 6px 
+			position: relative
+			button
+				opacity: 0 
+				position: absolute
+			&.slick-active
+				&:before,button
+					position: absolute
+					content: " " 
+					width: 4px 
+					height: 4px 
+					background: #45af94 
+					border-radius: 4px
+					left: 2px 
+					top: 2px 
+					z-index: 100 
+					opacity: 1
+					appearance: none 
+.entry
+	display: block
+	.smallslider &
+		margin: 0 20px 
+	&__pic	
+		margin-bottom: 23px 
+		img
+			display: block
+			width: 100% 
+	&__title
+		color: #333333 
+		+mon
+		font-size: 18px 
+		margin-bottom: 10px 
+	&__meta
+		+latob
+		text-transform: uppercase
+		color: #666666 
+		font-size: 11px 
+		margin-bottom: 10px 
+	&__content
+		font-size: 17px 
+		font-family: Georgia,serif 
+		color: #333333 
+		line-height: 27px
+
+.banner
+	background: url(../img/banner.jpg) no-repeat 50% 50%
+	background-size: cover
+	text-align: center
+	padding: 105px  0
+	color: #FFF 
+	margin-bottom: 70px 
+	&__title
+		font-size: 35px 
+		line-height: 45px
+	&__subtitle
+		text-transform: uppercase
+		margin: 25px 0 34px
+		font-size: 16px  
+	&__action
+		width: 259px
+		height: 35px
+		line-height: 35px 
+		+latob
+		font-size: 11px 
+		color: #fff 
+		text-decoration: none
+		border: 1px solid white
+		border-radius: 10px
+		text-align: center
 		display: block
-p
-	+r(1024)
-		background: red
+		margin: 0 auto 
+		text-transform: uppercase
+.tabs
+	text-align: center
+	margin-bottom: 74px 
+	margin-top: -10px 
+	text-transform: uppercase
+	&.tabs_left
+		text-align: left
+		margin: 0
+		height: 66px  
+		line-height: 66px 
+	li
+		display: inline-block
+	a
+		display: inline-block
+		text-decoration: none
+		+latob
+		color: #666666 
+		font-size: 13px 
+		margin: 0 25px
+		&.is-active,&:hover
+			color: #45AF94 
+.app
+	float: right
+	width: 46%
+	+r(850)
+		float: none
+		width: auto
+.magazine
+	float: left
+	width: 46% 
+	+r(850)
+		float: none
+		width: auto
+.media
+	+r(850)
+		margin: 0 15px 30px 15px 
+	.media__pic
+		float: left
+		margin-right: 37px 
+		+r(1000)
+			width: 30%
+		img
+			+r(1000) 
+				display: block
+				width: 100% 
+	.media__text
+		overflow: hidden
+		img
+			margin-right: 15px 
+	h3
+		color: #fb4668 
+		font-size: 16px 
+		+mon
+		text-transform: uppercase
+	&__date
+		font-size: 11px 
+		+latob
+		color: #666666 
+		text-transform: uppercase
+		margin-top: 10px 
+		margin-bottom: 12px 
+	&__content
+		color: #333333 
+		font-family: Georgia,serif
+		font-size: 17px  
+		line-height: 27px 
+		margin-bottom: 28px 
+	&__action
+		width: 200px
+		height: 45px
+		border: 1px solid #e1e1e1
+		text-align: center
+		color: #4d4d4d
+		font-family: Montserrat
+		font-size: 13px
+		line-height: 45px
+		display: inline-block
+		text-decoration: none
+.col1
+	width: 24% 
+	float: left
+	+r(976)
+		width: auto 
+		float: none
+.col2
+	width: 30%
+	float: left
+	margin-left: 147px  
+	+r(976)
+		width: auto 
+		float: none
+		margin: 0 0 30px 0
+.col3
+	width: 25%
+	float: right 
+	+r(976)
+		width: auto 
+		float: none
+.horo
+	.horo__slides
+		margin-left: 20px 
+	.slick-dots
+		position: absolute
+		top: -61px
+		right: 0 
+		text-align: right
+		li
+			display: inline-block
+			width: 10px 
+			height: 10px 
+			border: 1px solid #9A9A9A 
+			+box
+			border-radius: 10px
+			margin-right: 6px 
+			position: relative
+			button
+				opacity: 0 
+				position: absolute
+			&.slick-active
+				background: #a3abaf 
+	h3
+		text-transform: uppercase
+		font-size: 20px 
+		+mon
+		color: #1b1b1b 
+		padding: 0 0 17px 20px 
+		border-bottom: 1px solid #DDE2E4 
+		margin-bottom: 21px 
+	&__item
+		+clr
+		margin-bottom: 35px 
+		.horo__pic
+			float: left
+			margin-right: 15px 
+		.horo__text
+			overflow: hidden
+			font-family: Georgia,serif
+			font-size: 15px  
+			color: #485055 
+		.horo__title
+			font-size: 14px 
+			color: #a3abaf 
+			+lato
+.calendar
+	background: #ebebeb 
+	padding: 57px 41px 41px 43px 
+	h3
+		+mon
+		text-transform: uppercase
+		font-size: 20px 
+		color: #000000 
+		display: inline-block
+		padding-bottom: 20px 
+		padding-right: 10px 
+		border-bottom: 1px solid #000 
+		margin-bottom: 25px 
+
+
+
+
+		

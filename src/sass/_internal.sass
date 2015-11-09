@@ -1,0 +1,278 @@
+.b-internal
+	padding-top: 100px 
+.atop
+	@extend %in
+	margin-bottom: 40px 
+	.atop__bc
+		float: left
+		text-transform: uppercase
+		+latob
+		font-size: 11px 
+		color: #333333 
+		margin-bottom: 26px 
+		margin-left: 10px  
+		+r(600)
+			float: none
+			width: auto
+			text-align: left
+		a
+			color: #333333 
+			text-decoration: none
+			&.is-last
+				color: #45af94 
+	.atop__action
+		float: right
+		text-align: right
+		white-space: nowrap
+		margin-bottom: 26px
+		margin-right: 10px 
+		+r(600)
+			float: none
+			width: auto
+			text-align: left
+			margin-left: 10px 
+		a,div
+			text-decoration: none
+			text-transform: uppercase
+			+latob
+			font-size: 11px 
+			color: #333333 
+			display: inline-block
+			margin-left: 32px 
+			cursor: pointer
+			+r(600)
+				float: none
+				width: auto
+				text-align: left
+				margin-left: auto 
+				margin-right: 30px 
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-right: 4px 
+			position: relative
+			top: -2px 
+	.atop__email
+		i
+			+s(email)
+	.atop__print
+		i
+			+s(print)
+	.atop__pic
+		background-size: cover
+		background-position: 50% 50%
+		clear: both
+		width: 100%
+		height: 0
+		padding-bottom: 40%   
+.content
+	+clr
+	padding-bottom: 20px 
+	@extend %in
+	.content__main
+		padding-left: 170px 
+		overflow: hidden
+		&.content__main_list
+			padding-left: 0 
+		+r(700)
+			padding-left: 0
+			overflow: visible 
+	.content__sidebar 
+		width: 320px 
+		float: right
+		margin-left: 40px 
+		+r(700)
+			width: auto
+			float: none
+			margin-left: 0 
+.ad
+	text-align: center
+	margin-bottom: 42px 
+.h3
+	@extend .h2
+	font-size: 18px 
+	padding-bottom: 14px 
+	color: #4d4d4d 
+	margin-bottom: 27px 
+	&:before
+		height: 2px 
+.b
+	border: 1px solid #EBEBEB 
+
+.latest
+	padding-top: 23px 
+	padding-bottom: 23px 
+	border-bottom: 1px solid #EBEBEB 
+.small
+	margin: 0 20px
+	padding-bottom: 13px  
+	border-bottom: 1px solid #EBEBEB 
+	margin-bottom: 20px 
+	+clr
+	&:last-child
+		border-bottom: none
+		padding-bottom: 0  
+		margin-bottom: 0 
+	&__pic
+		float: left
+		margin-right: 15px 
+	.small__meta
+		display: inline-block
+		background: #45af94 
+		text-transform: uppercase
+		margin-bottom: 7px 
+		+latob
+		color: #fff 
+		text-decoration: none
+		padding: 3px 4px
+		line-height: 1  
+	.small__title
+		font-size: 13px 
+		text-transform: uppercase
+		+latob
+		color: #4d4d4d 
+		line-height: 1.2
+		overflow: hidden 
+	
+.newsletter
+	padding: 35px 20px 44px 20px
+	p
+		font-size: 14px 
+		margin-bottom: 23px 
+		color: #666666 
+	input[type=text]
+		width: 100% 
+		border: 2px solid #f1f1f1 
+		height: 32px 
+		line-height: normal 
+		text-align: center
+		font-size: 11px 
+		margin-bottom: 20px 
+		+box
+		border-radius: 32px
+		+latob
+		color: #808080 
+	input[type=submit]
+		text-transform: uppercase
+		font-size: 11px 
+		+latob
+		display: block
+		text-align: center
+		appearance: none
+		color: #fff 
+		background: #fb5774 
+		border-radius: 32px
+		height: 32px 
+		line-height: 32px 
+		width: 100% 
+.post
+	position: relative
+	font-family: Georgia,serif
+	color: #333333  
+	line-height: 30px
+	font-size: 18px  
+	margin-bottom: 44px 
+	+r(700) 
+		margin: 0 10px
+		padding-top: 10px  
+	.post__socials
+		position: absolute
+		left: -160px
+		top: .7em  
+		+r(700)
+			position: static
+			
+	h1
+		font-size: 45px 		 
+		+lato
+		color: #333333 
+		line-height: 1.1 
+	p
+		margin-bottom: 1em 
+	.img
+		float: left
+		margin: 15px 15px 15px -170px 
+		+r(700)
+			margin-left: 0 
+	.post__meta
+		font-size: 11px 
+		+latob
+		color: #666666 
+		text-transform: uppercase
+		margin-bottom: 30px 
+	blockquote
+		padding: 16px 20px
+		margin: 1em 0 
+		border-top: 1px solid #EBEBEB  
+		border-bottom: 1px solid #EBEBEB 
+		color: #808080 
+		font-size: 19px 
+		font-style: italic
+		p
+			margin-bottom: 0 
+.listpost
+	margin-bottom: 57px 
+	.h2
+		margin-bottom: 15px 
+	&__meta
+		text-transform: uppercase
+		margin-bottom: 34px 
+		text-align: center
+		+latob
+		font-size: 11px 
+		color: #666666 
+	&__cat
+		display: inline-block
+		background: #45af94 
+		text-transform: uppercase
+		margin-bottom: 7px 
+		+latob
+		color: #fff 
+		text-decoration: none
+		padding: 3px 4px
+		line-height: 1  
+		display: inline-block
+		margin-right: 10px 
+	&__aud
+		display: inline-block
+	&__content
+		font-size: 16px
+		font-family: Georgia,serif
+		color: #161616  
+		line-height: 25px 
+		margin-bottom: 55px 
+		margin-top: 10px 
+	&__more
+		border-top: 1px solid #EFEFEF 
+	&__socials
+		height: 40px 
+		line-height: 40px
+		position: relative
+		top: -20px  
+		border: 1px solid #EDEDED  
+		display: inline-block
+		float: left
+		background: #fff 
+		padding: 0 20px 
+		img
+			position: relative
+			top: 5px 
+	&__readmore
+		position: relative
+		top: -20px 
+		height: 40px 
+		line-height: 40px
+		display: inline-block
+		float: right 
+		text-decoration: none
+		text-transform: uppercase
+		color: #171717 
+		border: 1px solid #EDEDED  
+		padding: 0 20px 
+		background: #fff 
+		cursor: pointer
+		+latob
+	&__pic
+		img
+			display: block
+			width: 100% 

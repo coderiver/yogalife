@@ -1,0 +1,80 @@
+.footer
+	border-top: 1px solid #E1E1E1 
+	padding: 50px 0 30px 0
+	border-bottom: 4px solid #F4F4F4  
+	background: #ffffff 
+	+r(905)
+		padding-top: 10px 
+	&__in
+		@extend %in
+	&__socials
+		float: left
+		padding-top: 61px 
+		font-size: 0
+		margin-left: 10px 
+		+r(905)
+			float: none
+			padding-top: 20px 
+			text-align: center
+			margin-bottom: 20px 
+			margin-left: 0 
+		a,div
+			display: inline-block
+			margin-right: 13px 
+			+r(905)
+				margin: 0 10px 
+	.socials
+		@each $s in fb,tw,in,pi
+			&__#{$s}
+				+s(social_#{$s})
+	&__subscribe
+		float: right
+		padding-top: 61px 
+		margin-right: 10px 
+		+r(905)
+			float: none
+			width: 258px 
+			margin: 0 auto 20px auto 
+			padding-top: 0  
+		form
+			position: relative
+		input[type=text]
+			width: 235px 
+			border: 1px solid #9C9C9C 
+			line-height: normal
+			color: #7c7c7c  
+			font-size: 13px 
+			border-radius: 30px
+			height: 46px 
+			padding-left: 23px 
+		input[type=submit]
+			appearance: none
+			+s(mail)
+			position: absolute
+			right: 22px 
+			top: 16px 
+	.footer__center
+		overflow: hidden
+		text-align: center
+		.footer__logo
+			+s(logo)
+			margin-bottom: 40px 
+			margin-left: auto 
+			margin-right: auto 
+		.footer__nav
+			list-style: none
+			margin-bottom: 30px 
+			li,a
+				display: inline-block
+				font-size: 10px 
+				+latob
+				text-transform: uppercase
+				color: #9d9d9d 
+				text-decoration: none
+			a
+				margin: 0 10px 
+		.footer__copy
+			font-size: 10px 
+			+latob
+			color: #898989 
+		

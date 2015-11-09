@@ -1,0 +1,127 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0   
+	+g(#aaaaaa,rgba(#000,0))
+	background-color: transparent 
+	border-bottom: 1px solid #BEC4C0 
+	z-index: 1000 
+	.is-whiteheader &
+		background: #fff 
+	.header__logo
+		+s(logo_w)
+		display: inline-block
+		cursor: pointer
+		position: absolute
+		left: 10px 
+		top: 10px 
+		.is-whiteheader &
+			+s(logo)
+	.header__in
+		height: 60px 
+		@extend %in
+		
+	.header__search
+		position: absolute
+		right: 0
+		width: 72px  
+		top: 5px 
+		bottom: 5px 
+		border-left: 1px solid #9F9E91 
+		border-right: 1px solid #9F9E91 
+		text-align: center
+		cursor: pointer
+		+r(730)
+			display: none
+	.icon-search
+		+s(search)
+		position: relative
+		top: 15px 
+		.is-whiteheader &
+			+s(search1)
+	.nav
+		float: right
+		margin-right: 100px 
+		text-align: right
+		font-size: 0 
+		+r(730)
+			display: none
+			margin: 0 
+			position: absolute
+			top: 61px 
+			right: 0
+			width: 50%   
+			background: #fff  
+			
+		li
+			display: inline-block
+			+r(730)
+				display: block
+		a
+			text-decoration: none
+			text-transform: uppercase
+			color: #fff 
+			font-size: 15px 
+			display: inline-block
+			height: 60px 
+			line-height: 60px 
+			padding: 0 25px 
+			.is-whiteheader &
+				color: #333333 
+			+r(1000)
+				padding: 0 10px
+				font-size: 12px
+			+r(730)
+				color: #000 
+				display: block
+				height: auto
+				line-height: 1
+				padding: 6px 10px 6px 3px
+				font-size: 20px 
+	.header__ham
+		display: none
+		cursor: pointer
+		+r(730)
+			display: block
+			position: absolute
+			right: 10px 
+			top: 20px 
+			+s(ham)
+
+.top
+	height: 100% 
+	.top__slides
+		height: 100%
+		z-index: 4 
+		.top__slide 
+			background-size: cover  
+			height: 100vh 
+			width: 100% 
+			background-position: 50% 50% 
+			+vertical
+	.top__in
+		height: 0
+		@extend %in
+		z-index: 10 
+	.top__next,.top__prev
+		position: absolute   
+		top: 50vh
+		left: 10px  
+		margin-top: -35px 
+		+s(top-prev)
+		cursor: pointer
+	.top__next
+		left: auto
+		right: 10px 
+		+s(top-next)
+	.top__text
+		display: inline-block
+		text-transform: uppercase
+		text-align: center
+		font-size: 60px 
+		+latol
+		color: #fff 
+		 
+		
+		

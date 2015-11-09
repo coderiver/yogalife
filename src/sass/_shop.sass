@@ -1,0 +1,36 @@
+.items
+	font-size: 0 
+	&.items_per3
+		text-align: center
+.item
+	width: 25%
+	display: inline-block 
+	text-align: center
+	margin-bottom: 42px 
+	.items_per3 &
+		width: 33% 
+		+r(1200)
+			width: 50% 
+		+r(800)
+			width: 50% 
+		+r(500)
+			width: 100% 
+	+r(800)
+		width: 33%
+	+r(700) 
+		width: 50%
+	+r(500) 
+		width: 100%
+	&__pic
+		min-height: 176px 
+	&__title
+		text-transform: uppercase
+		+mon
+		font-size: 15px 
+		color: #161616 
+	&__price
+		font-style: italic 
+		color: #161616 
+		font-family: Georgia,serif
+		font-size: 16px  
+		margin-top: 18px 

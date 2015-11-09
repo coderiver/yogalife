@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<!-- theme color for android 5.0 -->
+	<meta name="theme-color" content="#fff">
+	<!-- <meta name="viewport" content="width=1200"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+
+	<script src="js/app.js"></script>
+</head>
+<body class="b-shoplist">
+//= partials/header.html
+<!-- begin top  -->
+<div class="top">
+	<div class="top__in">
+		<div class="top__next"></div>
+		<div class="top__prev"></div>
+	</div>
+	
+	<div class="top__slides js-slider">
+		<div class="top__slide" style="background-image: url(../img/top.jpg)">
+			<div class="top__text">ONLINE BOUTIQUE</div>
+		</div>
+		<div class="top__slide" style="background-image: url(../img/top.jpg)">
+			<div class="top__text">INSPIRATION</div>
+		</div>
+		<div class="top__slide" style="background-image: url(../img/top.jpg)">
+			<div class="top__text">INSPIRATION</div>
+		</div>
+	</div>
+</div>
+<!-- end top -->
+
+<!-- begin shoptop  -->
+<div class="shoptop">
+	<div class="cart">
+		<div class="cart__icon"></div>
+		<div class="cart__number">0</div>
+	</div>
+	<ul class="tabs tabs_left">
+		<li><a href="#" class="is-active">All</a></li>
+		<li><a href="#">Accesories</a></li>
+		<li><a href="#">Bottles</a></li>
+		<li><a href="#">Closing</a></li>
+		<li><a href="#">Mats</a></li>
+	</ul>
+	
+</div>
+<!-- end shoptop -->
+
+<!-- begin shopline  -->
+<div class="shopline">
+	<div class="shopline__bc">Home / Shop</div>
+	<div class="shopline__sort">
+		<div class="select">
+			<div class="select__value">Default sorting</div>
+			<div class="select__arrow"></div>
+			<select name="" id="">
+				<option value="">Default sorting</option>
+				<option value="">Not default sorting</option>
+			</select>
+		</div>
+	</div>
+</div>
+<!-- end shopline -->
+
+<!-- begin goods  -->
+<div class="goods">
+	//= partials/goods.html
+	//= partials/goods.html
+	//= partials/goods.html
+	//= partials/goods.html
+	//= partials/goods.html
+	//= partials/goods.html
+</div>
+<!-- end goods -->
+
+//= partials/footer.html
+</body>
+</html>
