@@ -175,7 +175,10 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 .entry__pic { margin-bottom: 23px; }
 .entry__pic img { display: block; width: 100%; }
 .entry__title { color: #333333; font-family: "Montserrat", sans-serif; font-weight: 400; font-size: 18px; margin-bottom: 10px; }
-.entry__meta { font-family: "Lato", sans-serif; font-weight: 700; text-transform: uppercase; color: #666666; font-size: 11px; margin-bottom: 10px; }
+.entry__title a { text-decoration: none; color: #333; }
+.entry__meta { font-family: "Lato", sans-serif; font-weight: 700; text-transform: uppercase; color: #666666; font-size: 11px; margin-bottom: 10px; font-size: 8px; }
+.entry__meta a { color: #666; text-decoration: none; margin-right: 10px; font-size: 11px; }
+.entry__meta span { margin-left: 10px; font-size: 11px; }
 .entry__content { font-size: 17px; font-family: Georgia, serif; color: #333333; line-height: 27px; }
 
 .banner { background: url(../img/banner.jpg) no-repeat 50% 50%; background-size: cover; text-align: center; padding: 105px 0; color: #FFF; margin-bottom: 70px; }
@@ -203,7 +206,7 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 .media .media__text img { margin-right: 15px; }
 .media h3 { color: #fb4668; font-size: 16px; font-family: "Montserrat", sans-serif; font-weight: 400; text-transform: uppercase; }
 .media__date { font-size: 11px; font-family: "Lato", sans-serif; font-weight: 700; color: #666666; text-transform: uppercase; margin-top: 10px; margin-bottom: 12px; }
-.media__content { color: #333333; font-family: Georgia, serif; font-size: 17px; line-height: 27px; margin-bottom: 28px; }
+.media__content { color: #333333; font-family: Georgia, serif; font-size: 17px; line-height: 27px; margin-bottom: 28px; text-decoration: none; display: block; }
 .media__action { width: 200px; height: 45px; border: 1px solid #e1e1e1; text-align: center; color: #4d4d4d; font-family: Montserrat; font-size: 13px; line-height: 45px; display: inline-block; text-decoration: none; }
 
 .col1 { width: 24%; float: left; }
@@ -216,16 +219,16 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 @media only screen and (max-width: 976px) { .col3 { width: auto; float: none; } }
 
 .horo .horo__slides { margin-left: 20px; }
-.horo .slick-dots { position: absolute; top: -61px; right: 0; text-align: right; }
+.horo .slick-dots { position: absolute; top: -61px; right: 0; text-align: right; bottom: auto; }
 .horo .slick-dots li { display: inline-block; width: 10px; height: 10px; border: 1px solid #9A9A9A; box-sizing: border-box; border-radius: 10px; margin-right: 6px; position: relative; }
 .horo .slick-dots li button { opacity: 0; position: absolute; }
 .horo .slick-dots li.slick-active { background: #a3abaf; }
 .horo h3 { text-transform: uppercase; font-size: 20px; font-family: "Montserrat", sans-serif; font-weight: 400; color: #1b1b1b; padding: 0 0 17px 20px; border-bottom: 1px solid #DDE2E4; margin-bottom: 21px; }
-.horo__item { *zoom: 1; margin-bottom: 35px; }
+.horo__item { *zoom: 1; margin-bottom: 35px; text-decoration: none; display: block; }
 .horo__item:after { content: " "; display: table; clear: both; }
 .horo__item .horo__pic { float: left; margin-right: 15px; }
 .horo__item .horo__text { overflow: hidden; font-family: Georgia, serif; font-size: 15px; color: #485055; }
-.horo__item .horo__title { font-size: 14px; color: #a3abaf; font-family: "Lato", sans-serif; font-weight: 400; }
+.horo__item .horo__title { font-size: 14px; color: #a3abaf; font-family: "Lato", sans-serif; font-weight: 400; margin-top: 8px; }
 
 .calendar { background: #ebebeb; padding: 57px 41px 41px 43px; }
 .calendar h3 { font-family: "Montserrat", sans-serif; font-weight: 400; text-transform: uppercase; font-size: 20px; color: #000000; display: inline-block; padding-bottom: 20px; padding-right: 10px; border-bottom: 1px solid #000; margin-bottom: 25px; }
@@ -233,7 +236,7 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 .items { font-size: 0; }
 .items.items_per3 { text-align: center; }
 
-.item { width: 25%; display: inline-block; text-align: center; margin-bottom: 42px; }
+.item { width: 25%; display: inline-block; text-align: center; margin-bottom: 42px; text-decoration: none; }
 .items_per3 .item { width: 33%; }
 @media only screen and (max-width: 1200px) { .items_per3 .item { width: 50%; } }
 @media only screen and (max-width: 800px) { .items_per3 .item { width: 50%; } }
@@ -241,7 +244,7 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 @media only screen and (max-width: 800px) { .item { width: 33%; } }
 @media only screen and (max-width: 700px) { .item { width: 50%; } }
 @media only screen and (max-width: 500px) { .item { width: 100%; } }
-.item__pic { min-height: 176px; }
+.item__pic { min-height: 176px; margin-bottom: 10px; }
 .item__title { text-transform: uppercase; font-family: "Montserrat", sans-serif; font-weight: 400; font-size: 15px; color: #161616; }
 .item__price { font-style: italic; color: #161616; font-family: Georgia, serif; font-size: 16px; margin-top: 18px; }
 
@@ -310,7 +313,7 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 
 .latest { padding-top: 23px; padding-bottom: 23px; border-bottom: 1px solid #EBEBEB; }
 
-.small { margin: 0 20px; padding-bottom: 13px; border-bottom: 1px solid #EBEBEB; margin-bottom: 20px; *zoom: 1; }
+.small { margin: 0 20px; padding-bottom: 13px; border-bottom: 1px solid #EBEBEB; margin-bottom: 20px; display: block; text-decoration: none; *zoom: 1; }
 .small:after { content: " "; display: table; clear: both; }
 .small:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
 .small__pic { float: left; margin-right: 15px; }
@@ -330,7 +333,9 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 .post p { margin-bottom: 1em; }
 .post .img { float: left; margin: 15px 15px 15px -170px; }
 @media only screen and (max-width: 700px) { .post .img { margin-left: 0; } }
-.post .post__meta { font-size: 11px; font-family: "Lato", sans-serif; font-weight: 700; color: #666666; text-transform: uppercase; margin-bottom: 30px; }
+.post .post__meta { font-family: "Lato", sans-serif; font-weight: 700; color: #666666; text-transform: uppercase; margin-bottom: 30px; font-size: 8px; }
+.post .post__meta span { margin-left: 10px; font-size: 11px; }
+.post .post__meta a { text-decoration: none; color: #666; font-size: 11px; margin-right: 10px; }
 .post blockquote { padding: 16px 20px; margin: 1em 0; border-top: 1px solid #EBEBEB; border-bottom: 1px solid #EBEBEB; color: #808080; font-size: 19px; font-style: italic; }
 .post blockquote p { margin-bottom: 0; }
 
@@ -354,7 +359,7 @@ body { font-family: "Lato", sans-serif; font-weight: 400; font-size: 12px; line-
 
 .toppost { margin-bottom: 55px; position: relative; }
 .toppost .toppost__slide { position: relative; background-position: 50% 50%; }
-.toppost .topppost__contents { height: 0; width: 100%; padding-bottom: 50%; }
+.toppost .topppost__contents { height: 0; width: 100%; padding-bottom: 50%; display: block; text-decoration: none; }
 .toppost .toppost__content { position: absolute; left: 26px; bottom: 26px; }
 .toppost .toppost__meta { font-size: 11px; font-family: "Lato", sans-serif; font-weight: 700; color: #666666; text-transform: uppercase; white-space: nowrap; }
 .toppost .toppost__cat { padding: 3px 4px; color: #fff; background: #fb5774; display: inline-block; margin-right: 10px; }
